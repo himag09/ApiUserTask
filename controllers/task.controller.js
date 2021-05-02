@@ -17,7 +17,7 @@ exports.getTask = (req, res) => {
 exports.getTasks = (req, res) => {
     var id = req.userId
     // console.log(id);
-    db.Task.findOne({
+    db.Task.findAll({
         where: { userId: id }
         // ,
         // include: [{
